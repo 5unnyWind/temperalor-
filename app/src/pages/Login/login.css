@@ -1,0 +1,121 @@
+.loginPage .forget {
+  margin-left: 68vw;
+  position: relative;
+  top: -10vh;
+  font-size: 1.3rem;
+}
+.loginPage .loginBox .logintext {
+  font-size: 2.77rem;
+  font-weight: 600;
+  color: #D3D3D3;
+  margin-top: 12vh;
+  margin-left: 4vw;
+}
+.loginPage .loginBox .user {
+  color: #D3D3D3;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 4vw;
+  margin-top: 5vh;
+}
+.loginPage .loginBox .user input {
+  margin-top: 3vh;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-bottom: #797676 solid 2px;
+  width: 90vw;
+  height: 2.6rem;
+  font-size: 1.4rem;
+  color: #D3D3D3;
+}
+.loginPage .loginBox .pasw {
+  color: #D3D3D3;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 4vw;
+  margin-top: 5vh;
+}
+.loginPage .loginBox .pasw input {
+  margin-top: 3vh;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-bottom: #797676 solid 2px;
+  width: 90vw;
+  height: 2.6rem;
+  font-size: 1.4rem;
+  color: #D3D3D3;
+}
+.loginPage .loginBox .pasw .showPass {
+  margin-left: 65vw;
+}
+.loginPage .loginBox .underline {
+  position: absolute;
+  display: block;
+  width: 90vw;
+  height: 2px;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in;
+}
+.loginPage .loginBox input:focus ~ .underline {
+  transform: scaleX(1) translateY(-2px);
+  background-color: #fff;
+}
+.loginPage .loginBox .protocol {
+  color: #AFADAD;
+  font-size: 1rem;
+  margin: 5vh ;
+}
+.loginPage .loginBox .protocol .protocolText {
+  color: #D3D3D3;
+}
+.loginPage .otherLogin {
+  text-align: center;
+  margin-top: 5vh;
+}
+.loginPage .otherLogin label {
+  width: 26vw;
+  height: 2px;
+  display: inline-block;
+  background-color: #494949;
+}
+.loginPage .otherLogin span {
+  color: #D3D3D3;
+  position: relative;
+  top: 3px;
+}
+.loginPage .otherLogin .qq {
+  background-image: url(../../assets/sprite.png);
+  background-position: -6px -90px;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  left: -10vw;
+  transform: scale(0.6);
+  display: inline-block;
+}
+.loginPage .otherLogin .wechat {
+  background-image: url(../../assets/sprite.png);
+  background-position: -92px -90px;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  right: -10vw;
+  transform: scale(0.6);
+  display: inline-block;
+}
+.forget {
+  color: #D3D3D3;
+}
+.fade {
+  animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0.99;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,197 @@
+.makePage{
+  animation: fadeIn 1s forwards;
+  opacity: .8;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+// 集中管理面板阴影，圆角
+.q{
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+
+// 分支面板
+.q0{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -272px -536px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2rem;
+  position: absolute;
+  .q()
+}
+
+// 问题1面板
+.q1{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -544px -536px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  .q()
+
+}
+// 问题2面板
+.q2{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -544px -1026px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  font-size: 1.5rem;
+  .q()
+}
+
+// 问题3面板
+.q3{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: 0px -536px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  .q()
+
+}
+
+// 问题4面板
+.q4{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: 0px -1026px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  .q()
+}
+// 问题5面板
+.q5{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -272px -1026px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  .q()
+
+}
+// 问题6面板
+.q6{
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -816px -536px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  .q()
+
+}
+
+
+// 确认答案按钮
+.qabtn{
+  width: 5rem;
+  height: 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 40px rgb(184, 183, 236);
+  
+  // background: linear-gradient(90deg, #BDB9D3, #E4D5DF, #9BBCDA, #F6EDCC);
+  // background-size: 200%;
+  // animation: lightFlow 10s  infinite;
+}
+
+
+// 正在回答的问题
+#center{
+  left: 22vw;
+  top: 15vh;
+  transform: perspective(400px) translateZ(0px);
+}
+// 未回答的问题
+#left{
+  left: -20vw;
+  top:  15vh;
+  transform: perspective(400px) translateZ(-100px);
+}
+// 回答完的问题
+#right{
+  left: 100vw;
+  top: 15vh;
+  opacity: 0;
+}
+// 返回按钮
+.makeBack{
+  position: absolute;
+  bottom: 3vh;
+  left: 1vw;
+}
+
+// 完成按钮
+.finish{
+  background-image: url(../../assets/sprite.png);
+  background-position: -731px -60px;
+  width: 168px;
+  height: 51px;
+  position: absolute;
+  top: 45vh;
+  left: 30vw;
+  opacity: 0;
+  z-index: -2;
+  transform: perspective(400px) translateZ(-350px);
+  transition: .4s;
+  .q()
+
+}
+#fin{
+  transform: perspective(400px) translateZ(0px);
+  opacity: .8;
+}
+
+
+// 动画
+
+//淡入 
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  // 100%{
+  //   opacity: 1;
+  // }
+}
+// 淡出
+@keyframes fadeOut {
+  to{
+    opacity: 0;
+  }
+}
+
+// 流光按钮
+@keyframes lightFlow {
+  0%{
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -200% 0;
+  }
+}

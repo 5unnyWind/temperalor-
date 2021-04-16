@@ -1,0 +1,160 @@
+.makePage {
+  animation: fadeIn 1s forwards;
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.q {
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q0 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -272px -536px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q1 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -544px -536px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q2 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -544px -1026px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q3 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: 0px -536px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q4 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: 0px -1026px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q5 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -272px -1026px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.q6 {
+  width: 272px;
+  height: 490px;
+  background-image: url(../../assets/sprite.png);
+  background-position: -816px -536px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+.qabtn {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 40px #b8b7ec;
+}
+#center {
+  left: 22vw;
+  top: 15vh;
+  transform: perspective(400px) translateZ(0px);
+}
+#left {
+  left: -20vw;
+  top: 15vh;
+  transform: perspective(400px) translateZ(-100px);
+}
+#right {
+  left: 100vw;
+  top: 15vh;
+  opacity: 0;
+}
+.makeBack {
+  position: absolute;
+  bottom: 3vh;
+  left: 1vw;
+}
+.finish {
+  background-image: url(../../assets/sprite.png);
+  background-position: -731px -60px;
+  width: 168px;
+  height: 51px;
+  position: absolute;
+  top: 45vh;
+  left: 30vw;
+  opacity: 0;
+  z-index: -2;
+  transform: perspective(400px) translateZ(-350px);
+  transition: 0.4s;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 30px #000;
+}
+#fin {
+  transform: perspective(400px) translateZ(0px);
+  opacity: 0.8;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes lightFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
